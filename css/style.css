@@ -1,0 +1,63 @@
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    text-align: center;
+}
+body {
+    margin:0px ;
+    background-color: #f3eeee   ;
+}
+header {
+    background-color: #71CDCE;
+    margin-bottom: 10px;
+}
+main {
+    background-color: #FFFFFF ;
+    margin: 0px 10px;
+}
+.main-content {
+    padding: 5px;
+}
+h1,h3 {
+    color:white;
+    display: inline-block;
+}
+p {
+    font-size: larger;
+}
+.title h2 {
+    color:white;
+    background-color: #71CDCE;
+    margin:0px;
+    padding:10px;
+}  
+.image {
+    padding: 2%;
+}
+.information {
+    text-align: left;
+    margin-left: 5%;
+}
+.square-area {
+    border: 2px solid #71CDCE;
+    margin:10px 20px;
+}
+.square-perimeter {
+    border: 2px solid #71CDCE;
+    margin:10px 20px;
+}
+.rectangle-area {
+    border: 2px solid #71CDCE;
+    margin:10px 20px;
+}
+.rectangle-perimeter {
+    border: 2px solid #71CDCE;
+    margin:10px 20px;
+}
+.triangle-area {
+    border: 2px solid #71CDCE;
+    margin:10px 20px;
+}
+.triangle-perimeter {
+    border: 2px solid #71CDCE;
+    margin:10px 20px;
+}
