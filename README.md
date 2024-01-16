@@ -15,7 +15,7 @@ Web Aplikasi Kalkulator ini dikembangkan sebagai bagian dari Tugas Akhir untuk K
 <br>
 <br>
   <p align="center"> 
-    「 Copyrights &copy <span id="copyright-year"></span> <a
-                href="https://www.linkedin.com/in/elfajriharsuda" target="_blank">Elfajri Harsuda.</a> All rights
+    「 Copyrights &copy 2024 <a
+                href="https://www.linkedin.com/in/elfajriharsuda" target="_blank">Elfajri Harsuda</a>. All rights
             reserved. 」 
   </p>
