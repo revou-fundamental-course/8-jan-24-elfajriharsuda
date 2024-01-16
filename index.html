@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>KATIK - KALKULATOR MATEMATIK</title>
+    <title>KABAR - KAlkulator Bangun datAR</title>
 </head>
 
 <body>
     <header class="header" id="myHeader">
         <a href="#">
-            <h1>KATIK</h1>
-            <h3>Kalkulator Matematik</h3>
+            <h1>KABAR</h1>
+            <h3>KAlkulator Bangun datAR</h3>
         </a>
     </header>
     <main>
         <section class="main-content">
-            <h2>Welcome to KATIK</h2>
+            <h2>Welcome to KABAR</h2>
             <p>Sebuah web app sederhana yang menghitung luas dan keliling bangun datar</p>
             <ul class="shape">
                 <a href="#square">
@@ -29,34 +29,29 @@
                 <a href="#triangle">
                     <li>Segitiga</li>
                 </a>
+                <a href="#circle">
+                    <li>Lingkaran</li>
+                </a>
             </ul>
         </section>
 
         <!-- Container Persegi -->
         <section class="square" id="square">
-            <section class="square-area">
-                <section class="title">
-                    <h2>LUAS PERSEGI</h2>
-                </section>
-                <section class="image">
-                    <img src="assets/square.svg" alt="square-area" width="20%" />
-                </section>
-                <section class="formula">
+            <section class="title">
+                <h2>PERSEGI</h2>
+            </section>
+            <section class="image">
+                <img src="assets/square.svg" alt="square" width="20%" />
+            </section>
+            <section class="formula">
+                <section class="formula-area">
                     <p class="information">Rumus Luas yaitu:</p>
                     <p><strong>L = S x S</strong></p>
                     <p class="information">Dimana :</p>
                     <p class="information">L = Luas </p>
                     <p class="information">S = Sisi </p>
                 </section>
-            </section>
-            <section class="square-perimeter">
-                <section class="title">
-                    <h2>KELILING PERSEGI</h2>
-                </section>
-                <section class="image">
-                    <img src="assets/square.svg" alt="square-perimeter" width="20%" />
-                </section>
-                <section class="formula">
+                <section class="formula-perimeter">
                     <p class="information">Rumus Keliling yaitu:</p>
                     <p><strong>K = 4 x S</strong></p>
                     <p class="information">Dimana :</p>
@@ -64,19 +59,50 @@
                     <p class="information">S = Sisi </p>
                 </section>
             </section>
+            <section class="calculate">
+                <h2>Hitung Persegi</h2>
+                <form name="inputForm">
+                    <section class="input-row">
+                        <section class="input-col25">
+                            <label for="side">Panjang Sisi</label>
+                        </section>
+                        <section class="input-col75">
+                            <input type="text" name="side" id="side" placeholder="Masukkan panjang sisi" required>
+                        </section>
+                    </section>
+                    <section class="input-row">
+                        <label for="unit">Satuan</label>
+                        <select name="unit-square" id="unit-square" required>
+                            <option value="km">km</option>
+                            <option value="hm">hm</option>
+                            <option value="dam">dam</option>
+                            <option value="m" selected>m</option>
+                            <option value="dm">dm</option>
+                            <option value="cm">cm</option>
+                            <option value="mm">mm</option>
+                        </select>
+                    </section>
+                    <br>
+                    <button class="button" onclick="square()">Hitung</button>
+                </form>
+            </section>
+            <section class="result">
+                <section class="result-area" id="result-area"></section>
+                <section class="result-perimeter" id="result-perimeter"></section>
+            </section>
         </section>
         <!-- Container Persegi end -->
 
         <!-- Container Persegi Panjang -->
         <section class="rectangle" id="rectangle">
-            <section class="rectangle-area">
-                <section class="title">
-                    <h2>LUAS PERSEGI PANJANG</h2>
-                </section>
-                <section class="image">
-                    <img src="assets/rectangle.svg" alt="rectangle-area" width="20%" />
-                </section>
-                <section class="formula">
+            <section class="title">
+                <h2>PERSEGI PANJANG</h2>
+            </section>
+            <section class="image">
+                <img src="assets/rectangle.svg" alt="rectangle" width="20%" />
+            </section>
+            <section class="formula">
+                <section class="formula-area">
                     <p class="information">Rumus Luas yaitu:</p>
                     <p><strong>L = p x l</strong></p>
                     <p class="information">Dimana :</p>
@@ -84,16 +110,7 @@
                     <p class="information">p = Sisi Panjang </p>
                     <p class="information">l = Sisi Lebar </p>
                 </section>
-            </section>
-
-            <section class="rectangle-perimeter">
-                <section class="title">
-                    <h2>KELILING PERSEGI PANJANG</h2>
-                </section>
-                <section class="image">
-                    <img src="assets/rectangle.svg" alt="rectangle-perimeter" width="20%" />
-                </section>
-                <section class="formula">
+                <section class="formula-perimeter">
                     <p class="information">Rumus Keliling yaitu:</p>
                     <p><strong>K = 2p + 2l</strong></p>
                     <p class="information">Dimana :</p>
@@ -106,42 +123,62 @@
         <!-- Container Persegi Panjang end -->
 
         <!-- Container Segitiga -->
-        <section class="triangle" id="triangle">
-            <section class="triangle-area">
-                <section class="title">
-                    <h2>LUAS SEGITIGA</h2>
-                </section>
-                <section class="image">
-                    <img src="assets/triangle.svg" alt="triangle-area" width="20%" />
-                </section>
-                <section class="formula">
+        <!-- <section class="triangle" id="triangle">
+            <section class="title">
+                <h2>SEGITIGA</h2>
+            </section>
+            <section class="image">
+                <img src="assets/triangle.svg" alt="triangle" width="20%" />
+            </section>
+            <section class="formula">
+                <section class="formula-area">
                     <p class="information">Rumus Luas yaitu:</p>
-                    <p><strong>L = p x l</strong></p>
+                    <p><strong>L = ( a x t ) / 2 </strong></p>
                     <p class="information">Dimana :</p>
                     <p class="information">L = Luas </p>
-                    <p class="information">p = Sisi Panjang </p>
-                    <p class="information">l = Sisi Lebar </p>
+                    <p class="information">a = Panjang Alas </p>
+                    <p class="information">t = Panjang Tinggi </p>
                 </section>
-            </section>
-
-            <section class="triangle-perimeter">
-                <section class="title">
-                    <h2>KELILING SEGITIGA</h2>
-                </section>
-                <section class="image">
-                    <img src="assets/triangle.svg" alt="triangle-perimeter" width="20%" />
-                </section>
-                <section class="formula">
+                <section class="formula-perimeter">
                     <p class="information">Rumus Keliling yaitu:</p>
-                    <p><strong>K = 2p + 2l</strong></p>
+                    <p><strong>K = a + 2b</strong></p>
                     <p class="information">Dimana :</p>
                     <p class="information">K = Keliling </p>
-                    <p class="information">p = Sisi Panjang </p>
-                    <p class="information">l = Sisi Lebar </p>
+                    <p class="information">a = Panjang Alas </p>
+                    <p class="information">b = Panjang sisi miring </p>
                 </section>
             </section>
-        </section>
+        </section> -->
         <!-- Container Segitiga end -->
+
+        <!-- Container Lingkaran -->
+        <!-- <section class="circle" id="circle">
+            <section class="title">
+                <h2>LINGKARAN</h2>
+            </section>
+            <section class="image">
+                <img src="assets/circle.svg" alt="circle" width="20%" />
+            </section>
+            <section class="formula">
+                <section class="formula-area">
+                    <p class="information">Rumus Luas yaitu:</p>
+                    <p><strong>L = &#960; x r<sup>2</sup></strong></p>
+                    <p class="information">Dimana :</p>
+                    <p class="information">L = Luas </p>
+                    <p class="information">&#960 = Konstanta &asymp; 22/7 </p>
+                    <p class="information">r = Jari - jari lingkaran </p>
+                </section>
+                <section class="formula-perimeter">
+                    <p class="information">Rumus Keliling yaitu:</p>
+                    <p><strong>K = &#960 x 2r</strong></p>
+                    <p class="information">Dimana :</p>
+                    <p class="information">K = Keliling </p>
+                    <p class="information">&#960 = Konstanta &asymp; 22/7 </p>
+                    <p class="information">r = Jari - jari lingkaran </p>
+                </section>
+            </section>
+        </section> -->
+        <!-- Container Lingkaran end -->
     </main>
     <footer>
         <p class="copyright"> Copyrights &copy <span id="copyright-year"></span> <a

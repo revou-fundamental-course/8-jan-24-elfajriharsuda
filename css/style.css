@@ -61,27 +61,53 @@ p {
     text-align: left;
     margin-left: 5%;
 }
-.square-area {
+.formula {
+    display: flex;
+    justify-content: space-evenly;
+}
+.formula-area, .formula-perimeter {
+    width:30%;
+}
+.result {
+    display: flex;
+    justify-content: space-evenly;
+}
+.result-area, .result-perimeter {
+    width:30%;
+    text-align: left;
+}
+.calculate {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+.button {
+    border: none;
+    border-radius: 10px;
+    background-color: #71C9CE;
+    color:white;
+    padding:10px;
+    margin: 13px;
+    cursor: pointer;
+    font-size: larger;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.square, .rectangle, .triangle, .circle {
     border: 2px solid #71CDCE;
     margin:10px 20px;
 }
-.square-perimeter {
-    border: 2px solid #71CDCE;
-    margin:10px 20px;
+.input-row {
+    display: inline-flex;
+    width:70%;
+    align-content: flex-start;
 }
-.rectangle-area {
-    border: 2px solid #71CDCE;
-    margin:10px 20px;
+.input-col25 {
+    float:left; 
+    width: 25%; 
 }
-.rectangle-perimeter {
-    border: 2px solid #71CDCE;
-    margin:10px 20px;
-}
-.triangle-area {
-    border: 2px solid #71CDCE;
-    margin:10px 20px;
-}
-.triangle-perimeter {
-    border: 2px solid #71CDCE;
-    margin:10px 20px;
+.input-col75 {
+    float:left; 
+    width: 75%;
 }
