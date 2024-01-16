@@ -43,10 +43,14 @@ main {
 }
 h1,h3 {
     color:white;
-    display: inline-block;
+    margin:0px 0px;
 }
 p {
     font-size: larger;
+}
+.code strong {
+    border:1px solid;
+    padding: 5px;
 }
 .title h2 {
     color:white;
@@ -71,6 +75,8 @@ p {
 .result {
     display: flex;
     justify-content: space-evenly;
+    padding:15px;
+    margin: 10px;
 }
 .result-area, .result-perimeter {
     width:30%;
@@ -80,7 +86,7 @@ p {
     border-top: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
 }
-.button {
+.btn-submit {
     border: none;
     border-radius: 10px;
     background-color: #71C9CE;
@@ -94,20 +100,25 @@ p {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.square, .rectangle, .triangle, .circle {
-    border: 2px solid #71CDCE;
-    margin:10px 20px;
+.btn-reset {
+    border: none;
+    border-radius: 10px;
+    background-color: #ce8871;
+    color:white;    
+    padding:10px;
+    margin: 13px;
+    cursor: pointer;
+    font-size: larger;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
-.input-row {
-    display: inline-flex;
-    width:70%;
-    align-content: flex-start;
-}
-.input-col25 {
-    float:left; 
-    width: 25%; 
-}
-.input-col75 {
-    float:left; 
-    width: 75%;
+input, select {
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
