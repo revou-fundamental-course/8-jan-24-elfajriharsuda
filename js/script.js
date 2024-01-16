@@ -40,7 +40,7 @@ function rectangle() {
 
   if(widthUnit !== lengthUnit) {
     alert('Satuan panjang dan lebar harus sama')
-  } else if(isNaN(lengthSide,widthSide) || lengthSide,widthSide <= 0) {
+  } else if(isNaN(lengthSide || widthSide) || lengthSide || widthSide <= 0) {
     alert('Masukkan panjang sisi yang valid');
    } else {
     let resultRecArea = parseFloat(lengthSide) * parseFloat(widthSide)
