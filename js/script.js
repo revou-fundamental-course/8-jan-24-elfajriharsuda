@@ -1,3 +1,6 @@
+// copyrights year
+document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+
 // sticky header
 window.onscroll = function() {myFunction()};
 
@@ -11,14 +14,6 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-
-// alert onprogress
-$(document).on("click","#triangle",function(){
-  alert("Bangun Segitiga masih dalam proses pengerjaan ");
- });
- $(document).on("click","#circle",function(){
-  alert("Bangun Lingkaran masih dalam proses pengerjaan ");
- });
 
 // square
 function square() {
@@ -69,6 +64,3 @@ function resetRectangle() {
   document.getElementById("resultRectangleArea").innerHTML =""
   document.getElementById("resultRectanglePerimeter").innerHTML =""
 }
-
-// copyrights year
-document.querySelector('#copyright-year').innerText = new Date().getFullYear();
